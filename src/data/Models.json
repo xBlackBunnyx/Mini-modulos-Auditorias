@@ -1,0 +1,72 @@
+[
+  {
+    "id": "mdl_1",
+    "name": "PCI DSS v4.0 Compliance",
+    "process": "Seguridad",
+    "checkCount": 32,
+    "checksPreview": [
+      { "title": "Protección de datos del titular", "priority": "HIGH" },
+      { "title": "Cifrado en transmisión", "priority": "HIGH" }
+    ]
+  },
+  {
+    "id": "mdl_2",
+    "name": "RGPD - Protección de Datos",
+    "process": "Privacidad",
+    "checkCount": 28,
+    "checksPreview": [
+      { "title": "Consentimiento explícito", "priority": "HIGH" },
+      { "title": "Derecho al olvido", "priority": "MEDIUM" }
+    ]
+  },
+  {
+    "id": "mdl_3",
+    "name": "ITIL 4 Gestión de Incidentes",
+    "process": "Operaciones",
+    "checkCount": 18,
+    "checksPreview": [
+      { "title": "Clasificación de incidentes", "priority": "MEDIUM" },
+      { "title": "SLA de resolución", "priority": "HIGH" }
+    ]
+  },
+  {
+    "id": "mdl_4",
+    "name": "COBIT 2019 - Gobierno TI",
+    "process": "RRHH",
+    "checkCount": 22,
+    "checksPreview": [
+      { "title": "Alineamiento estratégico", "priority": "HIGH" },
+      { "title": "Gestión de riesgos", "priority": "HIGH" }
+    ]
+  },
+  {
+    "id": "mdl_5",
+    "name": "NIST Cybersecurity Framework",
+    "process": "Seguridad",
+    "checkCount": 35,
+    "checksPreview": [
+      { "title": "Detección de amenazas", "priority": "HIGH" },
+      { "title": "Respuesta a incidentes", "priority": "MEDIUM" }
+    ]
+  },
+  {
+    "id": "mdl_6",
+    "name": "ISO 22301 Continuidad Negocio",
+    "process": "Ventas",
+    "checkCount": 20,
+    "checksPreview": [
+      { "title": "BIA - Análisis de impacto", "priority": "HIGH" },
+      { "title": "Planes de continuidad", "priority": "LOW" }
+    ]
+  },
+  {
+    "id": "mdl_7",
+    "name": "SOX - Control Interno Financiero",
+    "process": "Ventas",
+    "checkCount": 26,
+    "checksPreview": [
+      { "title": "Segregación de funciones", "priority": "LOW" },
+      { "title": "Controles acceso sistemas", "priority": "MEDIUM" }
+    ]
+  }
+]
