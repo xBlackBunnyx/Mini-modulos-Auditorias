@@ -29,18 +29,27 @@
                 :location="$vuetify.display.mobile ? 'bottom' : undefined"
                 temporary
               >
+
+              <!-- Forms -->
+                <v-row pa-3>
+                    <v-col cols="auto" class="pa-3">
+                        <forms></forms>
+                    </v-col>
+                </v-row>
+
                 <!-- Filters -->
 
               </v-navigation-drawer>
 
         </v-main>
 
-        <!-- Data Table -->
-         <v-layout row wrap>
-            <v-flex md8>
-                <data-table></data-table>
-            </v-flex>
-         </v-layout>
+            <!-- Data Table -->
+                <v-row>
+                    <v-col  offset="2">
+                        <data-table></data-table>
+                    </v-col>
+                </v-row>
+ 
         
     </v-app>
 </template>
@@ -49,11 +58,11 @@
 import { useTheme } from 'vuetify';
 import { ref } from 'vue';
 import DataTable from './dataTable.vue';
+import Forms from '../Forms/Forms.vue';
 
 const darkMode = ref(false);
 const theme = useTheme();
 const drawer = ref(false);
-
 
 
 const toggleDarkMode = () => {
