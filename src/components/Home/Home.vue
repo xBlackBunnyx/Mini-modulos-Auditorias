@@ -33,11 +33,14 @@
               <!-- Forms -->
                 <v-row pa-3>
                     <v-col cols="auto" class="pa-3">
-                        <forms></forms>
+                        <forms
+                            :existing-audits="audits"
+                            :existing-owners="owners"
+                            @audit-added="handleNewAudit"
+                            @owner-created="handleNewOwner"
+                        ></forms>
                     </v-col>
                 </v-row>
-
-                <!-- Filters -->
 
               </v-navigation-drawer>
 
@@ -60,10 +63,35 @@ import { ref } from 'vue';
 import DataTable from './dataTable.vue';
 import Forms from '../Forms/Forms.vue';
 
-const darkMode = ref(false);
-const theme = useTheme();
 const drawer = ref(false);
 
+//Form Data
+const audits = ref([]);
+const owners = ref([]);
+
+const loadData = async () => {
+    const auditsResponse = await fetch('http://localhost:3000/audits');
+    audits.value = await auditsResponse.json();
+
+    const uniqueOwners = audits.value.map(
+        audit => audit.owner
+    ). filter((owner, index, self) => index === self.findIndex(o => o.id === owner.id));
+    owners.value = uniqueOwners;
+};
+
+loadData();
+
+const handleNewAudit = (newAudit) => {
+    audits.value.push(newAudit);
+};
+
+const handleNewOwner = (newOwner) => {
+    owners.value.push(newOwner);
+};
+
+//Dark Mode Option
+const darkMode = ref(false);
+const theme = useTheme();
 
 const toggleDarkMode = () => {
     theme.global.name.value = darkMode.value ? "dark" : "light";
