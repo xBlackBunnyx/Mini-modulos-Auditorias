@@ -48,7 +48,7 @@
 
             <!-- Data Table -->
                 <v-row>
-                    <v-col  offset="2">
+                    <v-col  class="pa-5">
                         <data-table></data-table>
                     </v-col>
                 </v-row>

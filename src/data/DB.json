@@ -629,9 +629,25 @@
       "updatedAt": "2026-02-12T15:35:00Z",
       "createdAt": "2026-02-05T10:45:00Z",
       "templateId": "mdl_7"
+    },
+    {
+      "id": "aud_1043",
+      "name": "Auditoria de Prueba",
+      "process": "Operaciones",
+      "status": "DRAFT",
+      "progress": 0,
+      "owner": {
+        "id": "u_8",
+        "name": "Lorena"
+      },
+      "targetDate": "2026-02-25",
+      "createdAt": "2026-02-24T11:08:17.814Z",
+      "templateId": "mdl_1"
     }
   ],
   "checks": [
+    {
+  "aud_1001": [
     {
       "id": "chk_501",
       "title": "Verificar control de acceso a proveedores",
@@ -721,7 +737,9 @@
       "evidence": "",
       "reviewed": false,
       "updatedAt": "2026-02-15T13:45:00Z"
-    },
+    }
+  ],
+  "aud_1002": [
     {
       "id": "chk_511",
       "title": "Validar firewalls y segmentación de red",
@@ -811,7 +829,9 @@
       "evidence": "",
       "reviewed": false,
       "updatedAt": "2026-02-16T11:00:00Z"
-    },
+    }
+  ],
+  "aud_1003": [
     {
       "id": "chk_521",
       "title": "Verificar registro de actividades de tratamiento",
@@ -901,7 +921,9 @@
       "evidence": "PbD_assessment_2026.pdf",
       "reviewed": true,
       "updatedAt": "2026-02-14T11:20:00Z"
-    },
+    }
+  ],
+  "aud_1004": [
     {
       "id": "chk_531",
       "title": "Validar proceso de clasificación de incidentes",
@@ -991,7 +1013,9 @@
       "evidence": "Change_requests_incident_related.pdf",
       "reviewed": true,
       "updatedAt": "2026-02-12T11:10:00Z"
-    },
+    }
+  ],
+  "aud_1005": [
     {
       "id": "chk_541",
       "title": "Verificar alineamiento estratégico de TI",
@@ -1081,7 +1105,9 @@
       "evidence": "",
       "reviewed": false,
       "updatedAt": "2026-02-16T10:30:00Z"
-    },
+    }
+  ],
+  "aud_1006": [
     {
       "id": "chk_551",
       "title": "Validar detección de amenazas",
@@ -1171,7 +1197,9 @@
       "evidence": "Security_reviews_2026_schedule.xlsx",
       "reviewed": true,
       "updatedAt": "2026-02-14T12:40:00Z"
-    },
+    }
+  ],
+  "aud_1007": [
     {
       "id": "chk_561",
       "title": "Verificar análisis de impacto al negocio",
@@ -1261,7 +1289,9 @@
       "evidence": "Lessons_learned_2025.pdf",
       "reviewed": true,
       "updatedAt": "2026-02-10T16:10:00Z"
-    },
+    }
+  ],
+  "aud_1008": [
     {
       "id": "chk_571",
       "title": "Verificar segregación de funciones",
@@ -1351,7 +1381,9 @@
       "evidence": "Closing_checklist_jan2026.pdf",
       "reviewed": true,
       "updatedAt": "2026-02-14T13:20:00Z"
-    },
+    }
+  ],
+  "aud_1009": [
     {
       "id": "chk_581",
       "title": "Verificar gestión de leads en CRM",
@@ -1441,7 +1473,9 @@
       "evidence": "Sales_forecast_q2_2026.xlsx",
       "reviewed": true,
       "updatedAt": "2026-02-14T12:10:00Z"
-    },
+    }
+  ],
+  "aud_1010": [
     {
       "id": "chk_591",
       "title": "Verificar expedientes de empleados",
@@ -1531,7 +1565,9 @@
       "evidence": "Employee_survey_results_2025.pdf",
       "reviewed": true,
       "updatedAt": "2026-02-14T09:30:00Z"
-    },
+    }
+  ],
+  "aud_1011": [
     {
       "id": "chk_601",
       "title": "Verificar eficiencia operativa",
@@ -1621,7 +1657,9 @@
       "evidence": "OpEx_report_q1_forecast.xlsx",
       "reviewed": true,
       "updatedAt": "2026-02-10T11:25:00Z"
-    },
+    }
+  ],
+  "aud_1012": [
     {
       "id": "chk_611",
       "title": "Verificar cumplimiento normativo general",
@@ -1712,6 +1750,2768 @@
       "reviewed": true,
       "updatedAt": "2026-02-10T14:35:00Z"
     }
+  ],
+  "aud_1013": [
+    {
+      "id": "chk_621",
+      "title": "Verificar políticas de seguridad de la información",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "ISP_v3.2.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:30:00Z"
+    },
+    {
+      "id": "chk_622",
+      "title": "Revisar gestión de activos de información",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:15:00Z"
+    },
+    {
+      "id": "chk_623",
+      "title": "Validar clasificación de la información",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Information_classification_policy.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:20:00Z"
+    },
+    {
+      "id": "chk_624",
+      "title": "Comprobar seguridad en recursos humanos",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:45:00Z"
+    },
+    {
+      "id": "chk_625",
+      "title": "Verificar gestión de incidentes de seguridad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Incident_response_procedure_v4.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:30:00Z"
+    },
+    {
+      "id": "chk_626",
+      "title": "Revisar aspectos de seguridad en desarrollo",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:45:00Z"
+    },
+    {
+      "id": "chk_627",
+      "title": "Validar cumplimiento de estándares ISO",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "ISO_27001_certificate_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T12:10:00Z"
+    },
+    {
+      "id": "chk_628",
+      "title": "Comprobar seguridad en teletrabajo",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:20:00Z"
+    },
+    {
+      "id": "chk_629",
+      "title": "Verificar BYOD policy",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "BYOD_policy_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:40:00Z"
+    },
+    {
+      "id": "chk_630",
+      "title": "Revisar métricas de seguridad",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T13:55:00Z"
+    }
+  ],
+  "aud_1014": [
+    {
+      "id": "chk_631",
+      "title": "Verificar plan de auditoría anual",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Audit_plan_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:20:00Z"
+    },
+    {
+      "id": "chk_632",
+      "title": "Revisar independencia del auditor",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Auditor_independence_statement.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T10:45:00Z"
+    },
+    {
+      "id": "chk_633",
+      "title": "Validar programa de auditoría",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:30:00Z"
+    },
+    {
+      "id": "chk_634",
+      "title": "Comprobar competencia del equipo auditor",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Auditor_certifications_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:15:00Z"
+    },
+    {
+      "id": "chk_635",
+      "title": "Verificar comunicación de resultados",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:00:00Z"
+    },
+    {
+      "id": "chk_636",
+      "title": "Revisar plan de acciones correctivas",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:30:00Z"
+    },
+    {
+      "id": "chk_637",
+      "title": "Validar seguimiento de hallazgos",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Findings_tracking_log.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T15:20:00Z"
+    },
+    {
+      "id": "chk_638",
+      "title": "Comprobar calidad de evidencia",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:45:00Z"
+    },
+    {
+      "id": "chk_639",
+      "title": "Verificar informes de auditoría anteriores",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Previous_audit_reports_2025.zip",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T12:50:00Z"
+    },
+    {
+      "id": "chk_640",
+      "title": "Revisar metodología de auditoría",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:30:00Z"
+    }
+  ],
+  "aud_1015": [
+    {
+      "id": "chk_641",
+      "title": "Verificar gestión de riesgos de fraude",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Fraud_risk_assessment_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T13:15:00Z"
+    },
+    {
+      "id": "chk_642",
+      "title": "Revisar controles antifraude",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:45:00Z"
+    },
+    {
+      "id": "chk_643",
+      "title": "Validar código de conducta",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Code_of_conduct_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T11:30:00Z"
+    },
+    {
+      "id": "chk_644",
+      "title": "Comprobar canal de denuncias",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:15:00Z"
+    },
+    {
+      "id": "chk_645",
+      "title": "Verificar investigaciones internas",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:50:00Z"
+    },
+    {
+      "id": "chk_646",
+      "title": "Revisar política de regalos",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "Gifts_and_hospitality_policy.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T16:20:00Z"
+    },
+    {
+      "id": "chk_647",
+      "title": "Validar conflictos de interés",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:30:00Z"
+    },
+    {
+      "id": "chk_648",
+      "title": "Comprobar due diligence de terceros",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Third_party_due_diligence_2026.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:40:00Z"
+    },
+    {
+      "id": "chk_649",
+      "title": "Verificar formación en ética",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:10:00Z"
+    },
+    {
+      "id": "chk_650",
+      "title": "Revisar monitorización de cumplimiento",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Compliance_monitoring_report_q1.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T11:35:00Z"
+    }
+  ],
+  "aud_1016": [
+    {
+      "id": "chk_651",
+      "title": "Verificar gestión de cambios en TI",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Change_management_process_v3.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T12:40:00Z"
+    },
+    {
+      "id": "chk_652",
+      "title": "Revisar control de versiones",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:20:00Z"
+    },
+    {
+      "id": "chk_653",
+      "title": "Validar pruebas de software",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Software_testing_report_feb2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:50:00Z"
+    },
+    {
+      "id": "chk_654",
+      "title": "Comprobar gestión de configuraciones",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:10:00Z"
+    },
+    {
+      "id": "chk_655",
+      "title": "Verificar aprobación de cambios",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:40:00Z"
+    },
+    {
+      "id": "chk_656",
+      "title": "Revisar documentación de cambios",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Change_documentation_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T13:20:00Z"
+    },
+    {
+      "id": "chk_657",
+      "title": "Validar planes de rollback",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:15:00Z"
+    },
+    {
+      "id": "chk_658",
+      "title": "Comprobar cambios de emergencia",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:50:00Z"
+    },
+    {
+      "id": "chk_659",
+      "title": "Verificar revisión post-implementación",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "Post_implementation_reviews_q1.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T12:25:00Z"
+    },
+    {
+      "id": "chk_660",
+      "title": "Revisar métricas de cambios",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Change_metrics_dashboard_feb.png",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T09:55:00Z"
+    }
+  ],
+  "aud_1017": [
+    {
+      "id": "chk_661",
+      "title": "Verificar gestión de capacidad",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Capacity_plan_2026.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T10:20:00Z"
+    },
+    {
+      "id": "chk_662",
+      "title": "Revisar rendimiento de sistemas",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:35:00Z"
+    },
+    {
+      "id": "chk_663",
+      "title": "Validar monitorización de rendimiento",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Performance_monitoring_tools.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:40:00Z"
+    },
+    {
+      "id": "chk_664",
+      "title": "Comprobar escalabilidad",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:05:00Z"
+    },
+    {
+      "id": "chk_665",
+      "title": "Verificar predicción de demanda",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:55:00Z"
+    },
+    {
+      "id": "chk_666",
+      "title": "Revisar optimización de recursos",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Resource_optimization_report_q1.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:30:00Z"
+    },
+    {
+      "id": "chk_667",
+      "title": "Validar cuellos de botella",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:40:00Z"
+    },
+    {
+      "id": "chk_668",
+      "title": "Comprobar umbrales de alerta",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:20:00Z"
+    },
+    {
+      "id": "chk_669",
+      "title": "Verificar tendencias de capacidad",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Capacity_trends_2026_q1.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:15:00Z"
+    },
+    {
+      "id": "chk_670",
+      "title": "Revisar informes de capacidad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Capacity_reports_2026.zip",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:50:00Z"
+    }
+  ],
+  "aud_1018": [
+    {
+      "id": "chk_671",
+      "title": "Verificar gestión de niveles de servicio",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "SLA_performance_report_jan2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T09:30:00Z"
+    },
+    {
+      "id": "chk_672",
+      "title": "Revisar cumplimiento de SLAs",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:15:00Z"
+    },
+    {
+      "id": "chk_673",
+      "title": "Validar catálogo de servicios",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Service_catalog_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T12:30:00Z"
+    },
+    {
+      "id": "chk_674",
+      "title": "Comprobar métricas de servicio",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:20:00Z"
+    },
+    {
+      "id": "chk_675",
+      "title": "Verificar revisión de SLAs",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:30:00Z"
+    },
+    {
+      "id": "chk_676",
+      "title": "Revisar penalizaciones por incumplimiento",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "SLA_penalties_summary_2025.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:10:00Z"
+    },
+    {
+      "id": "chk_677",
+      "title": "Validar mejora continua de servicios",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:50:00Z"
+    },
+    {
+      "id": "chk_678",
+      "title": "Comprobar informes de disponibilidad",
+      "priority": "HIGH",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:25:00Z"
+    },
+    {
+      "id": "chk_679",
+      "title": "Verificar satisfacción de usuarios",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "User_satisfaction_survey_q1.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T11:45:00Z"
+    },
+    {
+      "id": "chk_680",
+      "title": "Revisar gestión de proveedores de servicios",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Service_provider_assessments_2026.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:20:00Z"
+    }
+  ],
+  "aud_1019": [
+    {
+      "id": "chk_681",
+      "title": "Verificar gestión de disponibilidad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Availability_plan_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T13:40:00Z"
+    },
+    {
+      "id": "chk_682",
+      "title": "Revisar métricas de disponibilidad",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:45:00Z"
+    },
+    {
+      "id": "chk_683",
+      "title": "Validar tiempos de caída",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Downtime_analysis_2025.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:20:00Z"
+    },
+    {
+      "id": "chk_684",
+      "title": "Comprobar mantenimientos planificados",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:55:00Z"
+    },
+    {
+      "id": "chk_685",
+      "title": "Verificar acuerdos de disponibilidad",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:45:00Z"
+    },
+    {
+      "id": "chk_686",
+      "title": "Revisar componentes críticos",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Critical_components_inventory.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T15:50:00Z"
+    },
+    {
+      "id": "chk_687",
+      "title": "Validar redundancia de sistemas",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:30:00Z"
+    },
+    {
+      "id": "chk_688",
+      "title": "Comprobar monitorización de disponibilidad",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:05:00Z"
+    },
+    {
+      "id": "chk_689",
+      "title": "Verificar informes de disponibilidad",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Availability_reports_2026_q1.zip",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T12:40:00Z"
+    },
+    {
+      "id": "chk_690",
+      "title": "Revisar mejora de disponibilidad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Availability_improvement_plan.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:15:00Z"
+    }
+  ],
+  "aud_1020": [
+    {
+      "id": "chk_691",
+      "title": "Verificar gestión de proveedores TI",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Vendor_management_policy_v3.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:20:00Z"
+    },
+    {
+      "id": "chk_692",
+      "title": "Revisar evaluación de proveedores",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:30:00Z"
+    },
+    {
+      "id": "chk_693",
+      "title": "Validar contratos con proveedores",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Vendor_contracts_2026_review.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:50:00Z"
+    },
+    {
+      "id": "chk_694",
+      "title": "Comprobar riesgos de proveedores",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:10:00Z"
+    },
+    {
+      "id": "chk_695",
+      "title": "Verificar dependencia de proveedores",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:35:00Z"
+    },
+    {
+      "id": "chk_696",
+      "title": "Revisar SLAs con proveedores",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Vendor_SLA_compliance_2025.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:30:00Z"
+    },
+    {
+      "id": "chk_697",
+      "title": "Validar renovación de contratos",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:45:00Z"
+    },
+    {
+      "id": "chk_698",
+      "title": "Comprobar plan de contingencia proveedores",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:55:00Z"
+    },
+    {
+      "id": "chk_699",
+      "title": "Verificar facturación de proveedores",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Vendor_invoicing_audit_feb.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:20:00Z"
+    },
+    {
+      "id": "chk_700",
+      "title": "Revisar salida de proveedores",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Vendor_offboarding_process.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:05:00Z"
+    }
+  ],
+  "aud_1021": [
+    {
+      "id": "chk_701",
+      "title": "Verificar gestión de parches de seguridad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Patch_management_policy_v2.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:30:00Z"
+    },
+    {
+      "id": "chk_702",
+      "title": "Revisar inventario de software",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:20:00Z"
+    },
+    {
+      "id": "chk_703",
+      "title": "Validar software obsoleto",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Obsolete_software_report_feb.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:40:00Z"
+    },
+    {
+      "id": "chk_704",
+      "title": "Comprobar ciclo de actualizaciones",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:30:00Z"
+    },
+    {
+      "id": "chk_705",
+      "title": "Verificar parches críticos",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:45:00Z"
+    },
+    {
+      "id": "chk_706",
+      "title": "Revisar pruebas de parches",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Patch_testing_results_feb.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:20:00Z"
+    },
+    {
+      "id": "chk_707",
+      "title": "Validar ventanas de mantenimiento",
+      "priority": "LOW",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:15:00Z"
+    },
+    {
+      "id": "chk_708",
+      "title": "Comprobar reversión de parches",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:40:00Z"
+    },
+    {
+      "id": "chk_709",
+      "title": "Verificar notificaciones de seguridad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Security_bulletin_subscriptions.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T12:50:00Z"
+    },
+    {
+      "id": "chk_710",
+      "title": "Revisar métricas de parcheado",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Patch_metrics_dashboard_feb.png",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T11:35:00Z"
+    }
+  ],
+  "aud_1022": [
+    {
+      "id": "chk_711",
+      "title": "Verificar gestión de vulnerabilidades",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Vulnerability_management_program.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T13:15:00Z"
+    },
+    {
+      "id": "chk_712",
+      "title": "Revisar escaneos de vulnerabilidades",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:40:00Z"
+    },
+    {
+      "id": "chk_713",
+      "title": "Validar análisis de riesgos",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Risk_analysis_report_feb2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T12:20:00Z"
+    },
+    {
+      "id": "chk_714",
+      "title": "Comprobar plan de remediación",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:05:00Z"
+    },
+    {
+      "id": "chk_715",
+      "title": "Verificar seguimiento de vulnerabilidades",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:30:00Z"
+    },
+    {
+      "id": "chk_716",
+      "title": "Revisar tiempos de mitigación",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Remediation_times_2025.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:50:00Z"
+    },
+    {
+      "id": "chk_717",
+      "title": "Validar herramientas de escaneo",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:55:00Z"
+    },
+    {
+      "id": "chk_718",
+      "title": "Comprobar informes de vulnerabilidades",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:20:00Z"
+    },
+    {
+      "id": "chk_719",
+      "title": "Verificar CVEs críticos",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Critical_CVE_tracking.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:30:00Z"
+    },
+    {
+      "id": "chk_720",
+      "title": "Revisar tendencias de vulnerabilidades",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Vulnerability_trends_q1_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:45:00Z"
+    }
+  ],
+  "aud_1023": [
+    {
+      "id": "chk_721",
+      "title": "Verificar seguridad en aplicaciones web",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Web_app_security_assessment.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T09:50:00Z"
+    },
+    {
+      "id": "chk_722",
+      "title": "Revisar OWASP Top 10",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:25:00Z"
+    },
+    {
+      "id": "chk_723",
+      "title": "Validar pruebas de penetración",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Pen_test_report_feb2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T16:10:00Z"
+    },
+    {
+      "id": "chk_724",
+      "title": "Comprobar autenticación web",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:45:00Z"
+    },
+    {
+      "id": "chk_725",
+      "title": "Verificar sesiones de usuario",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:50:00Z"
+    },
+    {
+      "id": "chk_726",
+      "title": "Revisar inyección SQL",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "SQL_injection_tests_results.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T13:30:00Z"
+    },
+    {
+      "id": "chk_727",
+      "title": "Validar XSS protections",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:20:00Z"
+    },
+    {
+      "id": "chk_728",
+      "title": "Comprobar CSRF tokens",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:15:00Z"
+    },
+    {
+      "id": "chk_729",
+      "title": "Verificar API security",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "API_security_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T15:40:00Z"
+    },
+    {
+      "id": "chk_730",
+      "title": "Revisar cabeceras de seguridad",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Security_headers_check_feb.csv",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T12:25:00Z"
+    }
+  ],
+  "aud_1024": [
+    {
+      "id": "chk_731",
+      "title": "Verificar seguridad en bases de datos",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Database_security_assessment.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:40:00Z"
+    },
+    {
+      "id": "chk_732",
+      "title": "Revisar control de acceso a BD",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:55:00Z"
+    },
+    {
+      "id": "chk_733",
+      "title": "Validar cifrado de BD",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "DB_encryption_status.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:30:00Z"
+    },
+    {
+      "id": "chk_734",
+      "title": "Comprobar auditoría de BD",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:15:00Z"
+    },
+    {
+      "id": "chk_735",
+      "title": "Verificar backups de BD",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:40:00Z"
+    },
+    {
+      "id": "chk_736",
+      "title": "Revisar parches de BD",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "DB_patch_status_feb2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:20:00Z"
+    },
+    {
+      "id": "chk_737",
+      "title": "Validar cuentas de servicio",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:35:00Z"
+    },
+    {
+      "id": "chk_738",
+      "title": "Comprobar datos sensibles",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:50:00Z"
+    },
+    {
+      "id": "chk_739",
+      "title": "Verificar conexiones a BD",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "DB_connections_audit.log",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:10:00Z"
+    },
+    {
+      "id": "chk_740",
+      "title": "Revisar roles y privilegios",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "DB_roles_matrix.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T14:55:00Z"
+    }
+  ],
+  "aud_1025": [
+    {
+      "id": "chk_741",
+      "title": "Verificar seguridad en endpoints",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Endpoint_security_policy_v3.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:20:00Z"
+    },
+    {
+      "id": "chk_742",
+      "title": "Revisar antivirus/EDR",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:30:00Z"
+    },
+    {
+      "id": "chk_743",
+      "title": "Validar cifrado de disco",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Disk_encryption_status.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:15:00Z"
+    },
+    {
+      "id": "chk_744",
+      "title": "Comprobar screensaver bloqueo",
+      "priority": "LOW",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:50:00Z"
+    },
+    {
+      "id": "chk_745",
+      "title": "Verificar parches de SO",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:55:00Z"
+    },
+    {
+      "id": "chk_746",
+      "title": "Revisar aplicaciones instaladas",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Installed_software_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:45:00Z"
+    },
+    {
+      "id": "chk_747",
+      "title": "Validar puertos abiertos",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:25:00Z"
+    },
+    {
+      "id": "chk_748",
+      "title": "Comprobar servicios innecesarios",
+      "priority": "HIGH",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:30:00Z"
+    },
+    {
+      "id": "chk_749",
+      "title": "Verificar USB controls",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "USB_device_control_policy.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T12:40:00Z"
+    },
+    {
+      "id": "chk_750",
+      "title": "Revisar local admin accounts",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Local_admin_accounts_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T15:30:00Z"
+    }
+  ],
+  "aud_1026": [
+    {
+      "id": "chk_751",
+      "title": "Verificar seguridad móvil",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Mobile_security_policy_v2.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T12:15:00Z"
+    },
+    {
+      "id": "chk_752",
+      "title": "Revisar MDM/UEM",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:45:00Z"
+    },
+    {
+      "id": "chk_753",
+      "title": "Validar contenedorización",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Containerization_status.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T13:50:00Z"
+    },
+    {
+      "id": "chk_754",
+      "title": "Comprobar aplicaciones aprobadas",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:00:00Z"
+    },
+    {
+      "id": "chk_755",
+      "title": "Verificar cifrado de dispositivo",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:35:00Z"
+    },
+    {
+      "id": "chk_756",
+      "title": "Revisar bloqueo remoto",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Remote_lock_capabilities.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:10:00Z"
+    },
+    {
+      "id": "chk_757",
+      "title": "Validar BYOD enrollment",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:50:00Z"
+    },
+    {
+      "id": "chk_758",
+      "title": "Comprobar jailbreak/root",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:25:00Z"
+    },
+    {
+      "id": "chk_759",
+      "title": "Verificar perfiles de configuración",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Configuration_profiles_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:15:00Z"
+    },
+    {
+      "id": "chk_760",
+      "title": "Revisar apps corporativas",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Corporate_apps_inventory.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:20:00Z"
+    }
+  ],
+  "aud_1027": [
+    {
+      "id": "chk_761",
+      "title": "Verificar seguridad IoT",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "IoT_security_assessment.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:45:00Z"
+    },
+    {
+      "id": "chk_762",
+      "title": "Revisar inventario IoT",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:15:00Z"
+    },
+    {
+      "id": "chk_763",
+      "title": "Validar segmentación IoT",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "IoT_network_segmentation.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T16:30:00Z"
+    },
+    {
+      "id": "chk_764",
+      "title": "Comprobar contraseñas por defecto",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:40:00Z"
+    },
+    {
+      "id": "chk_765",
+      "title": "Verificar actualizaciones IoT",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:25:00Z"
+    },
+    {
+      "id": "chk_766",
+      "title": "Revisar comunicaciones IoT",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "IoT_communications_audit.pcap",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:55:00Z"
+    },
+    {
+      "id": "chk_767",
+      "title": "Validar cloud IoT platforms",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:30:00Z"
+    },
+    {
+      "id": "chk_768",
+      "title": "Comprobar APIs IoT",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:45:00Z"
+    },
+    {
+      "id": "chk_769",
+      "title": "Verificar data privacy IoT",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "IoT_data_privacy_assessment.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T15:50:00Z"
+    },
+    {
+      "id": "chk_770",
+      "title": "Revisar lifecyle IoT",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "IoT_device_lifecycle.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T12:10:00Z"
+    }
+  ],
+  "aud_1028": [
+    {
+      "id": "chk_771",
+      "title": "Verificar seguridad en contenedores",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Container_security_policy.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T13:30:00Z"
+    },
+    {
+      "id": "chk_772",
+      "title": "Revisar imágenes base",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:50:00Z"
+    },
+    {
+      "id": "chk_773",
+      "title": "Validar escaneo de imágenes",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Image_scanning_report_feb.csv",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:20:00Z"
+    },
+    {
+      "id": "chk_774",
+      "title": "Comprobar Kubernetes security",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:10:00Z"
+    },
+    {
+      "id": "chk_775",
+      "title": "Verificar RBAC en contenedores",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:45:00Z"
+    },
+    {
+      "id": "chk_776",
+      "title": "Revisar secrets management",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Container_secrets_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:40:00Z"
+    },
+    {
+      "id": "chk_777",
+      "title": "Validar network policies",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:55:00Z"
+    },
+    {
+      "id": "chk_778",
+      "title": "Comprobar runtime security",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:15:00Z"
+    },
+    {
+      "id": "chk_779",
+      "title": "Verificar registries seguros",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Container_registry_security.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:35:00Z"
+    },
+    {
+      "id": "chk_780",
+      "title": "Revisar compliance CIS",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "CIS_benchmark_compliance.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:20:00Z"
+    }
+  ],
+  "aud_1029": [
+    {
+      "id": "chk_781",
+      "title": "Verificar seguridad serverless",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Serverless_security_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:20:00Z"
+    },
+    {
+      "id": "chk_782",
+      "title": "Revisar funciones Lambda",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:35:00Z"
+    },
+    {
+      "id": "chk_783",
+      "title": "Validar permisos IAM",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Serverless_IAM_roles.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:10:00Z"
+    },
+    {
+      "id": "chk_784",
+      "title": "Comprobar variables de entorno",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:30:00Z"
+    },
+    {
+      "id": "chk_785",
+      "title": "Verificar dependencias",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:55:00Z"
+    },
+    {
+      "id": "chk_786",
+      "title": "Revisar logging y monitoreo",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Serverless_monitoring_config.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:30:00Z"
+    },
+    {
+      "id": "chk_787",
+      "title": "Validar timeouts y límites",
+      "priority": "LOW",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:40:00Z"
+    },
+    {
+      "id": "chk_788",
+      "title": "Comprobar manejo de errores",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:50:00Z"
+    },
+    {
+      "id": "chk_789",
+      "title": "Verificar datos sensibles en logs",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Log_inspection_report_feb.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T12:20:00Z"
+    },
+    {
+      "id": "chk_790",
+      "title": "Revisar disaster recovery",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Serverless_DR_plan.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T15:45:00Z"
+    }
+  ],
+  "aud_1030": [
+    {
+      "id": "chk_791",
+      "title": "Verificar seguridad en DevOps",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "DevSecOps_maturity_assessment.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T09:40:00Z"
+    },
+    {
+      "id": "chk_792",
+      "title": "Revisar CI/CD pipelines",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:20:00Z"
+    },
+    {
+      "id": "chk_793",
+      "title": "Validar SAST/DAST",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "SAST_DAST_tools_integration.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T16:15:00Z"
+    },
+    {
+      "id": "chk_794",
+      "title": "Comprobar análisis de composición",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:05:00Z"
+    },
+    {
+      "id": "chk_795",
+      "title": "Verificar firmado de código",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:40:00Z"
+    },
+    {
+      "id": "chk_796",
+      "title": "Revisar infraestructura como código",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "IaC_security_scan_results.json",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:55:00Z"
+    },
+    {
+      "id": "chk_797",
+      "title": "Validar secretos en código",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:45:00Z"
+    },
+    {
+      "id": "chk_798",
+      "title": "Comprobar compliance as code",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:30:00Z"
+    },
+    {
+      "id": "chk_799",
+      "title": "Verificar artefactos seguros",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Artifact_repository_security.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:50:00Z"
+    },
+    {
+      "id": "chk_800",
+      "title": "Revisar métricas DevSecOps",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "DevSecOps_metrics_dashboard.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:10:00Z"
+    }
+  ],
+  "aud_1031": [
+    {
+      "id": "chk_801",
+      "title": "Verificar inteligencia de amenazas",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Threat_intelligence_program.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T12:30:00Z"
+    },
+    {
+      "id": "chk_802",
+      "title": "Revisar fuentes de threat intel",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:55:00Z"
+    },
+    {
+      "id": "chk_803",
+      "title": "Validar indicadores de compromiso",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "IoC_feeds_subscribed.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T13:40:00Z"
+    },
+    {
+      "id": "chk_804",
+      "title": "Comprobar integración con SIEM",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:50:00Z"
+    },
+    {
+      "id": "chk_805",
+      "title": "Verificar análisis de TTPs",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:50:00Z"
+    },
+    {
+      "id": "chk_806",
+      "title": "Revisar informes de amenazas",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "Threat_landscape_report_q1.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:20:00Z"
+    },
+    {
+      "id": "chk_807",
+      "title": "Validar threat hunting",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:30:00Z"
+    },
+    {
+      "id": "chk_808",
+      "title": "Comprobar campañas APT",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:35:00Z"
+    },
+    {
+      "id": "chk_809",
+      "title": "Verificar threat modeling",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Threat_modeling_reports.zip",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T15:20:00Z"
+    },
+    {
+      "id": "chk_810",
+      "title": "Revisar inteligencia de riesgos",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Risk_intelligence_dashboard.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T12:45:00Z"
+    }
+  ],
+  "aud_1032": [
+    {
+      "id": "chk_811",
+      "title": "Verificar respuesta a incidentes",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "IR_plan_v4.2.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:15:00Z"
+    },
+    {
+      "id": "chk_812",
+      "title": "Revisar equipo de respuesta",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:30:00Z"
+    },
+    {
+      "id": "chk_813",
+      "title": "Validar simulacros de incidentes",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Tabletop_exercises_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:50:00Z"
+    },
+    {
+      "id": "chk_814",
+      "title": "Comprobar herramientas de respuesta",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:15:00Z"
+    },
+    {
+      "id": "chk_815",
+      "title": "Verificar comunicación de incidentes",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:35:00Z"
+    },
+    {
+      "id": "chk_816",
+      "title": "Revisar forense digital",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Digital_forensics_capabilities.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:30:00Z"
+    },
+    {
+      "id": "chk_817",
+      "title": "Validar cadena de custodia",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:55:00Z"
+    },
+    {
+      "id": "chk_818",
+      "title": "Comprobar lecciones aprendidas",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:10:00Z"
+    },
+    {
+      "id": "chk_819",
+      "title": "Verificar informes post-incidente",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Post_incident_reports_2025.zip",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:45:00Z"
+    },
+    {
+      "id": "chk_820",
+      "title": "Revisar métricas de respuesta",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "IR_metrics_dashboard_q1.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:05:00Z"
+    }
+  ],
+  "aud_1033": [
+    {
+      "id": "chk_821",
+      "title": "Verificar cumplimiento PCI DSS",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "PCI_DSS_self_assessment.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:50:00Z"
+    },
+    {
+      "id": "chk_822",
+      "title": "Revisar alcance PCI",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:40:00Z"
+    },
+    {
+      "id": "chk_823",
+      "title": "Validar protección de datos titular",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Cardholder_data_protection.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:30:00Z"
+    },
+    {
+      "id": "chk_824",
+      "title": "Comprobar cifrado de PAN",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:40:00Z"
+    },
+    {
+      "id": "chk_825",
+      "title": "Verificar autenticación de usuarios",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:45:00Z"
+    },
+    {
+      "id": "chk_826",
+      "title": "Revisar controles de acceso",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "PCI_access_controls_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:10:00Z"
+    },
+    {
+      "id": "chk_827",
+      "title": "Validar monitoreo de redes",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:25:00Z"
+    },
+    {
+      "id": "chk_828",
+      "title": "Comprobar pruebas de penetración",
+      "priority": "HIGH",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:55:00Z"
+    },
+    {
+      "id": "chk_829",
+      "title": "Verificar políticas de seguridad",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "PCI_policies_review_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T12:50:00Z"
+    },
+    {
+      "id": "chk_830",
+      "title": "Revisar informe ROC",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "ROC_report_2025.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T15:30:00Z"
+    }
+  ],
+  "aud_1034": [
+    {
+      "id": "chk_831",
+      "title": "Verificar cumplimiento HIPAA",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "HIPAA_compliance_assessment.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T13:20:00Z"
+    },
+    {
+      "id": "chk_832",
+      "title": "Revisar protección de PHI",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:25:00Z"
+    },
+    {
+      "id": "chk_833",
+      "title": "Validar controles de privacidad",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Privacy_controls_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:20:00Z"
+    },
+    {
+      "id": "chk_834",
+      "title": "Comprobar notificación de brechas",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:00:00Z"
+    },
+    {
+      "id": "chk_835",
+      "title": "Verificar acuerdos de socios",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:30:00Z"
+    },
+    {
+      "id": "chk_836",
+      "title": "Revisar formación en privacidad",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "Privacy_training_records.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:45:00Z"
+    },
+    {
+      "id": "chk_837",
+      "title": "Validar salvaguardas técnicas",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:50:00Z"
+    },
+    {
+      "id": "chk_838",
+      "title": "Comprobar auditoría de accesos",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:20:00Z"
+    },
+    {
+      "id": "chk_839",
+      "title": "Verificar plan de contingencia",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "HIPAA_contingency_plan.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:35:00Z"
+    },
+    {
+      "id": "chk_840",
+      "title": "Revisar políticas de seguridad",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "HIPAA_policies_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:15:00Z"
+    }
+  ],
+  "aud_1035": [
+    {
+      "id": "chk_841",
+      "title": "Verificar cumplimiento SOX",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "SOX_compliance_matrix_2026.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:45:00Z"
+    },
+    {
+      "id": "chk_842",
+      "title": "Revisar controles generales TI",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:55:00Z"
+    },
+    {
+      "id": "chk_843",
+      "title": "Validar controles de aplicación",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Application_controls_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:40:00Z"
+    },
+    {
+      "id": "chk_844",
+      "title": "Comprobar segregación funciones",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:35:00Z"
+    },
+    {
+      "id": "chk_845",
+      "title": "Verificar acceso a sistemas financieros",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:50:00Z"
+    },
+    {
+      "id": "chk_846",
+      "title": "Revisar pistas de auditoría",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Audit_trails_review_feb.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:20:00Z"
+    },
+    {
+      "id": "chk_847",
+      "title": "Validar gestión de cambios",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:40:00Z"
+    },
+    {
+      "id": "chk_848",
+      "title": "Comprobar backups financieros",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:45:00Z"
+    },
+    {
+      "id": "chk_849",
+      "title": "Verificar informes financieros",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Financial_reporting_controls.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:20:00Z"
+    },
+    {
+      "id": "chk_850",
+      "title": "Revisar documentación SOX",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "SOX_documentation_2026.zip",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:15:00Z"
+    }
+  ],
+  "aud_1036": [
+    {
+      "id": "chk_851",
+      "title": "Verificar cumplimiento GDPR",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "GDPR_compliance_report_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T12:10:00Z"
+    },
+    {
+      "id": "chk_852",
+      "title": "Revisar registro actividades",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:35:00Z"
+    },
+    {
+      "id": "chk_853",
+      "title": "Validar derechos ARCO",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "DSAR_process_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:30:00Z"
+    },
+    {
+      "id": "chk_854",
+      "title": "Comprobar consentimientos",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:55:00Z"
+    },
+    {
+      "id": "chk_855",
+      "title": "Verificar análisis de riesgos",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:40:00Z"
+    },
+    {
+      "id": "chk_856",
+      "title": "Revisar contratos DPA",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "DPA_contracts_review.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:55:00Z"
+    },
+    {
+      "id": "chk_857",
+      "title": "Validar transferencias internacionales",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:35:00Z"
+    },
+    {
+      "id": "chk_858",
+      "title": "Comprobar DPO designado",
+      "priority": "LOW",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:15:00Z"
+    },
+    {
+      "id": "chk_859",
+      "title": "Verificar breach notification",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Breach_notification_procedure.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:25:00Z"
+    },
+    {
+      "id": "chk_860",
+      "title": "Revisar privacidad desde diseño",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "PbD_assessment_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T12:55:00Z"
+    }
+  ],
+  "aud_1037": [
+    {
+      "id": "chk_861",
+      "title": "Verificar cumplimiento ISO 27001",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "ISO27001_certificate_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:30:00Z"
+    },
+    {
+      "id": "chk_862",
+      "title": "Revisar Anexo A controles",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:45:00Z"
+    },
+    {
+      "id": "chk_863",
+      "title": "Validar SOA",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Statement_of_applicability_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:10:00Z"
+    },
+    {
+      "id": "chk_864",
+      "title": "Comprobar plan de tratamiento",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:10:00Z"
+    },
+    {
+      "id": "chk_865",
+      "title": "Verificar auditorías internas",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:55:00Z"
+    },
+    {
+      "id": "chk_866",
+      "title": "Revisar revisión dirección",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "Management_review_minutes_2025.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:40:00Z"
+    },
+    {
+      "id": "chk_867",
+      "title": "Validar mejora continua",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:45:00Z"
+    },
+    {
+      "id": "chk_868",
+      "title": "Comprobar métricas ISMS",
+      "priority": "HIGH",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:30:00Z"
+    },
+    {
+      "id": "chk_869",
+      "title": "Verificar alcance ISMS",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "ISMS_scope_definition.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:50:00Z"
+    },
+    {
+      "id": "chk_870",
+      "title": "Revisar política de seguridad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Security_policy_v4.1.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T15:40:00Z"
+    }
+  ],
+  "aud_1038": [
+    {
+      "id": "chk_871",
+      "title": "Verificar cumplimiento NIST",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "NIST_self_assessment_2026.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:20:00Z"
+    },
+    {
+      "id": "chk_872",
+      "title": "Revisar CSF framework",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:25:00Z"
+    },
+    {
+      "id": "chk_873",
+      "title": "Validar categorías NIST",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "NIST_categories_compliance.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T16:20:00Z"
+    },
+    {
+      "id": "chk_874",
+      "title": "Comprobar perfiles NIST",
+      "priority": "LOW",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:45:00Z"
+    },
+    {
+      "id": "chk_875",
+      "title": "Verificar implementación",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:35:00Z"
+    },
+    {
+      "id": "chk_876",
+      "title": "Revisar gaps analysis",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "NIST_gap_analysis_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:10:00Z"
+    },
+    {
+      "id": "chk_877",
+      "title": "Validar roadmap NIST",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:30:00Z"
+    },
+    {
+      "id": "chk_878",
+      "title": "Comprobar referencias NIST",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:05:00Z"
+    },
+    {
+      "id": "chk_879",
+      "title": "Verificar controles prioritarios",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Priority_controls_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:15:00Z"
+    },
+    {
+      "id": "chk_880",
+      "title": "Revisar métricas NIST",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "NIST_metrics_dashboard.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:30:00Z"
+    }
+  ],
+  "aud_1039": [
+    {
+      "id": "chk_881",
+      "title": "Verificar cumplimiento ENS",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "ENS_compliance_report.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T12:40:00Z"
+    },
+    {
+      "id": "chk_882",
+      "title": "Revisar categoría ENS",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:50:00Z"
+    },
+    {
+      "id": "chk_883",
+      "title": "Validar medidas ENS",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "ENS_measures_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:50:00Z"
+    },
+    {
+      "id": "chk_884",
+      "title": "Comprobar nivel de seguridad",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:05:00Z"
+    },
+    {
+      "id": "chk_885",
+      "title": "Verificar informes ENS",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:45:00Z"
+    },
+    {
+      "id": "chk_886",
+      "title": "Revisar auditoría ENS",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "ENS_audit_report_2025.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:55:00Z"
+    },
+    {
+      "id": "chk_887",
+      "title": "Validar plan adecuación",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:55:00Z"
+    },
+    {
+      "id": "chk_888",
+      "title": "Comprobar perfil cumplimiento",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:50:00Z"
+    },
+    {
+      "id": "chk_889",
+      "title": "Verificar declaración aplicabilidad",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "ENS_SoA_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:40:00Z"
+    },
+    {
+      "id": "chk_890",
+      "title": "Revisar infraestructuras comunes",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Common_infrastructure_ENS.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:25:00Z"
+    }
+  ],
+  "aud_1040": [
+    {
+      "id": "chk_891",
+      "title": "Verificar cumplimiento LOPDGDD",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "LOPDGDD_compliance_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T11:15:00Z"
+    },
+    {
+      "id": "chk_892",
+      "title": "Revisar principios protección",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:30:00Z"
+    },
+    {
+      "id": "chk_893",
+      "title": "Validar legitimación",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Legitimation_bases_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:15:00Z"
+    },
+    {
+      "id": "chk_894",
+      "title": "Comprobar categorías datos",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:50:00Z"
+    },
+    {
+      "id": "chk_895",
+      "title": "Verificar procedimientos ejercicio derechos",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:50:00Z"
+    },
+    {
+      "id": "chk_896",
+      "title": "Revisar medidas responsabilidad proactiva",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "Accountability_measures.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:35:00Z"
+    },
+    {
+      "id": "chk_897",
+      "title": "Validar registros actividades",
+      "priority": "MEDIUM",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:40:00Z"
+    },
+    {
+      "id": "chk_898",
+      "title": "Comprobar notificación brechas",
+      "priority": "HIGH",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:25:00Z"
+    },
+    {
+      "id": "chk_899",
+      "title": "Verificar EIPD",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "DPIAs_conducted_2025.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:55:00Z"
+    },
+    {
+      "id": "chk_900",
+      "title": "Revisar DPO designado",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "DPO_appointment_LOPDGDD.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:10:00Z"
+    }
+  ],
+  "aud_1041": [
+    {
+      "id": "chk_901",
+      "title": "Verificar cumplimiento sectorial financiero",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Financial_regulations_compliance.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T13:10:00Z"
+    },
+    {
+      "id": "chk_902",
+      "title": "Revisar circular 1/2022",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:45:00Z"
+    },
+    {
+      "id": "chk_903",
+      "title": "Validar gestión de riesgos operacionales",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Operational_risk_framework.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T14:30:00Z"
+    },
+    {
+      "id": "chk_904",
+      "title": "Comprobar continuidad de negocio",
+      "priority": "HIGH",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T12:15:00Z"
+    },
+    {
+      "id": "chk_905",
+      "title": "Verificar externalización servicios",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:40:00Z"
+    },
+    {
+      "id": "chk_906",
+      "title": "Revisar gobierno TI",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "IT_governance_financial_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T15:30:00Z"
+    },
+    {
+      "id": "chk_907",
+      "title": "Validar informes regulatorios",
+      "priority": "LOW",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:45:00Z"
+    },
+    {
+      "id": "chk_908",
+      "title": "Comprobar auditoría de sistemas",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T14:35:00Z"
+    },
+    {
+      "id": "chk_909",
+      "title": "Verificar PBC",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "PBC_self_assessment_2026.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T13:25:00Z"
+    },
+    {
+      "id": "chk_910",
+      "title": "Revisar resiliencia operacional",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Operational_resilience_report.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T16:05:00Z"
+    }
+  ],
+  "aud_1042": [
+    {
+      "id": "chk_911",
+      "title": "Verificar cumplimiento sector sanitario",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Healthcare_compliance_matrix.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-14T10:55:00Z"
+    },
+    {
+      "id": "chk_912",
+      "title": "Revisar ley de autonomía paciente",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T09:35:00Z"
+    },
+    {
+      "id": "chk_913",
+      "title": "Validar historia clínica electrónica",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "EHR_security_audit.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-13T15:45:00Z"
+    },
+    {
+      "id": "chk_914",
+      "title": "Comprobar consentimiento informado",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T11:55:00Z"
+    },
+    {
+      "id": "chk_915",
+      "title": "Verificar receta electrónica",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T08:55:00Z"
+    },
+    {
+      "id": "chk_916",
+      "title": "Revisar interoperabilidad",
+      "priority": "LOW",
+      "status": "OK",
+      "evidence": "Interoperability_standards_compliance.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-12T14:20:00Z"
+    },
+    {
+      "id": "chk_917",
+      "title": "Validar acceso profesionales",
+      "priority": "HIGH",
+      "status": "RUNNING",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-16T10:35:00Z"
+    },
+    {
+      "id": "chk_918",
+      "title": "Comprobar trazabilidad accesos",
+      "priority": "MEDIUM",
+      "status": "KO",
+      "evidence": "",
+      "reviewed": false,
+      "updatedAt": "2026-02-15T15:15:00Z"
+    },
+    {
+      "id": "chk_919",
+      "title": "Verificar consentimientos específicos",
+      "priority": "HIGH",
+      "status": "OK",
+      "evidence": "Specific_consents_audit.xlsx",
+      "reviewed": true,
+      "updatedAt": "2026-02-11T14:45:00Z"
+    },
+    {
+      "id": "chk_920",
+      "title": "Revisar informes sanitarios",
+      "priority": "MEDIUM",
+      "status": "OK",
+      "evidence": "Health_reports_compliance_2026.pdf",
+      "reviewed": true,
+      "updatedAt": "2026-02-10T13:50:00Z"
+    }
+  ]
+}
   ],
   "templates": [
     {

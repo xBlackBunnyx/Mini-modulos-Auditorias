@@ -1,6 +1,6 @@
 <template>
     <!-- Button -->
-    <v-dialog max-width="600px">
+    <v-dialog max-width="600px" v-model="dialogForm">
         <template v-slot:activator="{props:activatorProps}">
             <v-btn flat v-bind="activatorProps" color="#26c9c9">
             Nueva Auditoria
@@ -14,8 +14,9 @@
             </v-card-title>
             <!-- Body -->
         <v-card-text>
-            <v-form class="px-3" ref="form">
-                <!-- Form Data -->
+            <!-- Form Data -->
+            <v-form class="px-3" ref="form" v-model="isFormValid" @submit.prevent="submit">
+                
                  <!-- Text fields -->
                 <v-text-field 
                     label="Nombre de la Auditoría" 
@@ -53,6 +54,26 @@
                         </template>
                     </v-select>
                 </v-container>
+
+            <!-- Template Selection -->
+                <v-container>
+                    <v-select 
+                        v-model="template" 
+                        :items="templates" 
+                        :error-messages="v$.template.$errors.map(e => e.$message)"
+                        label="Modelo"
+                        required
+                        @blur="v$.template.$touch"
+                        @input="v$.template.$touch"
+                        >
+                        <template v-slot:item="{props, item}">
+                            <v-list-item v-bind="props" :title="null">
+                                <v-list-item-title>{{ item.title }}</v-list-item-title>
+                            </v-list-item>
+                        </template>
+                    </v-select>
+                </v-container>
+
                 <!-- Date Picker -->
                 <v-menu v-model="menu" :close-on-content-click="false">
                     <template v-slot:activator="{props}">
@@ -69,12 +90,22 @@
                     <v-date-picker v-model="targetDate" @update:model-value="menu = false"></v-date-picker>
                 </v-menu>
 
-                <!-- Adding button -->
+                <v-card-actions class="px-0">
+                    <v-spacer></v-spacer>
+                     <!-- Adding button -->
                  <v-btn 
                     flat 
                     class="mt-3" 
                     color="#26c9c9" 
                     @click="submit">Añadir Auditoria</v-btn>
+
+                    <!-- Cancel Button -->
+                     <v-btn
+                            color="red-darken-1" 
+                            variant="text"
+                            @click="cancelForm"
+                        > Cancelar</v-btn>
+                </v-card-actions>
             </v-form>
         </v-card-text>
         </v-card>
@@ -88,6 +119,26 @@ import { useVuelidate } from '@vuelidate/core'
 import { required } from '@vuelidate/validators';
 import { useRouter } from 'vue-router';
 
+//Cancel the form
+const dialogForm = ref(false);
+
+function cancelForm(){
+    resetForm();
+    dialogForm.value = false;
+};
+
+function resetForm (){
+   name.value = '';
+    owner.value = '';
+    targetDate.value = null;
+    select.value = null;
+    template.value = null;
+    if (v$.value){
+        v$.value.$reset();
+    };
+    console.log('Form reset complete');
+}
+
 const items = [
             {title: 'Operaciones'},
             {title: 'Privacidad'},
@@ -96,18 +147,29 @@ const items = [
             {title: 'Ventas'},
         ];
 
+const templates = [
+    {title: 'mdl_1'},
+    {title: 'mdl_2'},
+    {title:'mdl_3'},
+    {title:'mdl_4'},
+    {title:'mdl_5'},
+    {title:'mdl_6'},
+    {title:'mdl_7'},
+];
 
     //Original State of the Form values
     const name = ref('');
     const owner = ref('');
     const select = ref(null);
+    const template =ref(null);
     const targetDate = ref(null);
-     const menu = ref(false);
+    const menu = ref(false);
 
     const formState = computed(() => ({
         name: name.value,
         owner: owner.value,
         select: select.value,
+        template:template.value,
         targetDate: targetDate.value,
     }));
 
@@ -120,10 +182,13 @@ const items = [
         });
 
     //Validation checks
+    const isFormValid = ref(false);
+
     const rules = {
         name: {required},
         owner: {required},
         select: {required},
+        template: {required},
         targetDate: {required},
     };
 
@@ -218,43 +283,46 @@ const items = [
                 progress: 0,
                 owner: ownerIDName,
                 targetDate: formattedDate.value,
-                createdAt: new Date().toISOString()
+                createdAt: new Date().toISOString(),
+                templateId: template.value?.title || template.value
             };
 
             console.log('New audit to save: ', newAudit);
 
-            try {
-                const response = await fetch('http://localhost:3000/audits', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(newAudit)
-                });
-                if (!response.ok) {
-                    throw new Error('Failed to save');
+            if (isFormValid.value) {
+                try {
+                    const response = await fetch('http://localhost:3000/audits', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(newAudit)
+                    });
+                    if (!response.ok) {
+                        throw new Error('Failed to save');
+                    }
+                    const savedAudit = await response.json();
+                    console.log('Audit saved successfully: ', savedAudit);
+
+                    emit('audit-added', savedAudit);
+
+                    //Reset form
+                    name.value = '';
+                    owner.value = '';
+                    targetDate.value = null;
+                    select.value = null;
+                    template.value = null;
+
+                    v$.value.$reset();
+
+                    alert('Se ha guardado la auditoria');
+
+                    router.push({name: 'audit-detail', params: {id: savedAudit.id}});
+                } catch (error) {
+                    console.log('Error saving the audit: ', error);
+                    alert('No se ha podido guardar la auditoría');
                 }
-                const savedAudit = await response.json();
-                console.log('Audit saved successfully: ', savedAudit);
-
-                emit('audit-added', savedAudit);
-
-                //Reset form
-                name.value = '';
-                owner.value = '';
-                targetDate.value = null;
-                select.value = null;
-
-                v$.value.$reset();
-
-                alert('Se ha guardado la auditoria');
-
-                router.push({name: 'audit-detail', params: {id: savedAudit.id}});
-            } catch (error) {
-                console.log('Error saving the audit: ', error);
-                alert('No se ha podido guardar la auditoría');
             }
-            
         }
 
  
