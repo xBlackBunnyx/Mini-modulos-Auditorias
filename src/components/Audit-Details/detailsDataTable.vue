@@ -3,7 +3,7 @@
         <!-- Header -->
         <v-card-title class="d-flex align-center justify-space-between" >
             <!-- Audit name -->
-            <div class="text-h6">{{ audit?.name }}</div>
+            <div class="text-h5">{{ audit?.name }}</div>
              <!-- Refresh Button -->
             <v-btn
                 :disabled="loading"
@@ -107,18 +107,21 @@ import { format } from 'date-fns';
 const route = useRoute();
 
 const audit = ref(null);
-const checksData = ref([]);
 const rawChecksData = ref([]);
 const loading = ref(false);
 const checkLoading = ref(false);
 const error = ref(null);
+const execution = ref(null);
 
 const itemsPerPage = ref (10);
 const checkItems = ref([]);
 const totalCheckItems = ref(0);
 
 //Getting info from the selected audit
-const auditID = computed(() => route.params.id);
+const auditID = computed(() => {
+    const id = route.params.id;
+    return id;
+});
 const auditProgress = computed(() => audit.value?.progress || 0);
 
 const checkHeaders =  ref (
@@ -126,9 +129,8 @@ const checkHeaders =  ref (
                     {title: "Nombre", align:"center", key:"title"},
                     {title: "Prioridad", align:"center", key:"priority"},
                     {title: "Estado", align:"center", key:"status"},
-                    {title: "Progreso", align: "center", key:"progress"},
                     {title: "Evidencias", align:"center", key:"evidence"},
-                    {title: "Revisado", key:"reviewed"},
+                    {title: "Revisado", align:"center", key:"reviewed"},
                 ]
             );
 
@@ -151,12 +153,16 @@ function formatingDate(dateString) {
 
 //Function that executes the auditory (WIP)
 function auditExecution(){
-
+    execution.value = true;
+    setTimeout(() => {
+        execution.value = false;
+    }, 2000);
 }
 
 //getting the data from the "backend"
 const checksFakeAPI = {
     async fetch ({page, itemsPerPage, sortBy}) {
+
         return new Promise(resolve => {
             setTimeout(() => {
                 const start = (page -1) * itemsPerPage;
@@ -172,8 +178,9 @@ const checksFakeAPI = {
                         return sortOrder === 'desc' ? bValue - aValue : aValue - bValue
                     })
                 }
-                const paginated = cItems.slice(start, end)
-                resolve({items: paginated, total: cItems.length})
+                const paginated = cItems.slice(start, end);
+
+                resolve({items: paginated, total: cItems.length});
             }, 500)
         })
     },
@@ -181,12 +188,14 @@ const checksFakeAPI = {
 
 //function to load the items into the data table
 function loadCheckItems ({page, itemsPerPage, sortBy}) {
+
     checkLoading.value = true;
     checksFakeAPI.fetch({page, itemsPerPage, sortBy}).then(({items, total}) => {
         checkItems.value = items;
         totalCheckItems.value = total;
         checkLoading.value = false;
-    }).catch(err => {
+
+    }) .catch (err => {
         console.error('Error in FakeAPI.fetch:', err);
         checkLoading.value = false;
     });
@@ -211,16 +220,16 @@ async function loadChecksForAudit() {
         const response = await fetch('http://localhost:3000/checks');
         const allChecks = await response.json();
 
-        if (Array.isArray(allChecks)){
-            checksData.value = allChecks.filter(check => check.auditID === auditID.value);
+        if (Array.isArray(allChecks) && allChecks.length > 0){
+            const checksData = allChecks[0]
+           rawChecksData.value = checksData[auditID.value] || [];
+
         } else {
-            checksData.value = allChecks[auditID.value] || [];
+            rawChecksData.value = allChecks[auditID.value] || [];
         }
-        
-        rawChecksData.value = [...checksData.value];
+       
     } catch (err) {
         console.error('Error loading checks: ', err);
-        checksData.value = [];
         rawChecksData.value = [];
     }
 }
@@ -257,6 +266,13 @@ onMounted(async () => {
 
 <style scoped>
 .v-data-table-server{
+    width: 100%;
+}
+.v-card {
+    width: 100%;
+}
+
+.v-card-text {
     width: 100%;
 }
 </style>
