@@ -20,10 +20,10 @@ En otra terminal distinta, para activar el frontend como tal, hay que usar el co
 Dada la poca experiencia de su creadora en el desarrollo web, han habido diferentes dificultades y muchas cosas se han quedado sin poder realizarse.
 - Las tablas de las auditorías y los detalles de esta no responden correctamente al cambio de resolución. Concretamente, la tabla de los detalles de auditoría no ocupa todo el espacio que podría ocupar en resoluciones altas
 - Es posible que la búsqueda de los filtros de las auditorías no funcionen correctamente y solo filtren si los términos son exactamente iguales
--Tampoco se ha podido hacer que la API falle 
--El botón de refrescar no funciona correctamente si la base de datos no está activa
+- Tampoco se ha podido hacer que la API falle 
+- El botón de refrescar no funciona correctamente si la base de datos no está activa
 - La adición de una nueva auditoría no funciona correctamente. Si es una nueva auditoría completamente, se añade una id extra además de la id de la auditoría. Si es una auditoría existente, en lugar de actualizar la lista anterior, se vuelve a añadir una nueva entrada en el DB.json repitiendo la id de la auditoría en cuestión y vuelve a mostrar todos los checks anteriores
--No ha sido posible actualizar el progreso de la auditoría
+- No ha sido posible actualizar el progreso de la auditoría
 
 En caso de tener más tiempo, se intentaría arreglar todos los problemas mencionados, además de poder aplicarle un estilo general a la página web, para que sea más atractiva visualmente.
 
