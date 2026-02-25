@@ -13,7 +13,7 @@ Para poder correr el proyecto, es necesario tener disponibles todas las dependen
 ## Cómo correr el proyecto
 El proyecto se ha estado corriendo en local tomando como ruta principal la carpeta donde se encuentra el proyecto (Mini-modulos-Auditoria)
 Teniendo esto en cuenta, para ejecutar el backend, es necesario escribir en la terminal donde se ejecute el proyecto (en mi caso, en la terminal de Virtual Studio Code) el comando:
-json-server .\src\data\DB.json --port 3000
+npm run json-server-back
 En otra terminal distinta, para activar el frontend como tal, hay que usar el comando: npm run dev 
 
 ## Cosas que no han podido completarse y mejoras
