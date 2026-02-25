@@ -24,6 +24,14 @@
             <v-col cols="auto">
                 <v-btn color="#E23E54" @click="$router.go(-1)">Menú principal</v-btn>
             </v-col>
+            <v-col>
+                <!-- Execute Audit Dialog -->
+                <CheckForm
+                    v-if="auditID"
+                    :auditID="auditID"
+                    @check-added="handleNewCheck"
+                ></CheckForm>
+            </v-col>
          </v-row>
          </v-row>
     </v-container>
@@ -31,11 +39,19 @@
 
 <script setup>
 import DetailsDataTable from './detailsDataTable.vue';
-import { ref } from 'vue';
+import CheckForm from '../Forms/CheckForm.vue';
+import { ref, computed } from 'vue';
 import { useTheme } from 'vuetify';
-import { useRouter } from 'vue-router';
+import { useRoute } from 'vue-router';
 
-const router = useRouter();
+const route = useRoute();
+const auditID = computed(() => route.params.id);
+
+//Form Data
+const checks = ref([]);
+const handleNewCheck = (newCheck) => {
+    checks.value.push(newCheck);
+}
 
 //Dark Mode Option
 const darkMode = ref(false);

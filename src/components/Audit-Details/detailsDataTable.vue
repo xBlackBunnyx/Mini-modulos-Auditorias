@@ -82,25 +82,67 @@
                 loading-text="Cargando, por favor espere"
                 @update:options="loadCheckItems"
             >
-
+                     <!-- Modify Auditory -->
+                <template v-slot:item.actions="{ item }">
+                    <div class="d-flex ga-2 justify-end">
+                        <v-icon 
+                            color="medium-emphasis" 
+                            icon="mdi-pencil"
+                            size="small"
+                            @click="edit(item.id)"
+                        ></v-icon>
+                    </div>
+                </template>
                 <!-- Loading -->
                 <template v-slot:loading>
                     <v-skeleton-loader type="table-row@10"></v-skeleton-loader>
                 </template>
             </v-data-table-server>
         </div>
-            <v-card-actions>
-                <!-- Execute Audit -->
-                 <div>
-                    <v-btn base-color="#26c9c9" @click="auditExecution">Ejecutar Auditoria</v-btn>
-                 </div>
-            </v-card-actions>
         </v-card-text>
     </v-card>   
+    <!-- Editing Table -->
+    <v-dialog v-model="editDialog" max-width="500">
+    <v-card>
+      <template v-slot:text>
+        <v-row>
+          <v-col cols="12">
+            <v-text-field v-model="formModel.title" label="Título"></v-text-field>
+          </v-col>
+
+          <v-col cols="12" md="6">
+            <v-select v-model="formModel.priority" :items="[ 'LOW',  'MEDIUM', 'HIGH']" label="Prioridad"></v-select>
+          </v-col>
+
+          <v-col cols="12" md="6">
+            <v-select v-model="formModel.status" :items="[ 'PENDING', 'QUEUED', 'RUNNING','OK', 'KO']" label="Estado"></v-select>
+          </v-col>
+
+          <v-col cols="12" md="6">
+            <v-file-input v-model="formModel.evidence" label="Evidencias"></v-file-input>
+          </v-col>
+
+          <v-col cols="12" md="6">
+            <v-checkbox v-model="formModel.checkbox"  label="Revisado"></v-checkbox>
+          </v-col>
+        </v-row>
+      </template>
+
+      <v-divider></v-divider>
+
+      <v-card-actions class="bg-surface-light">
+        <v-btn text="Cancelar" variant="plain" @click="editDialog = false"></v-btn>
+
+        <v-spacer></v-spacer>
+
+        <v-btn text="Guardar" @click="save"></v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script setup>
-import { ref,  computed, onMounted} from 'vue';
+import { ref,  computed, onMounted, shallowRef} from 'vue';
 import { useRoute } from 'vue-router';
 import { format } from 'date-fns';
 
@@ -111,7 +153,8 @@ const rawChecksData = ref([]);
 const loading = ref(false);
 const checkLoading = ref(false);
 const error = ref(null);
-const execution = ref(null);
+const formModel = ref(null);
+const editDialog = shallowRef(false)
 
 const itemsPerPage = ref (10);
 const checkItems = ref([]);
@@ -131,6 +174,7 @@ const checkHeaders =  ref (
                     {title: "Estado", align:"center", key:"status"},
                     {title: "Evidencias", align:"center", key:"evidence"},
                     {title: "Revisado", align:"center", key:"reviewed"},
+                    {title:'Acciones', key: 'actions', align:'end'}
                 ]
             );
 
@@ -151,12 +195,26 @@ function formatingDate(dateString) {
     return format(new Date(dateString), 'yyyy/MM/dd HH:mm');
 }
 
-//Function that executes the auditory (WIP)
-function auditExecution(){
-    execution.value = true;
-    setTimeout(() => {
-        execution.value = false;
-    }, 2000);
+//editing
+function edit(id) {
+    const found = rawChecksData.value.find(check => check.id === id);
+
+    formModel.value = {
+        id: found.id,
+        title: found.title,
+        priority: found.priority,
+        status: found.status,
+        evidence: found.evidence,
+        checkbox: found.checkbox,
+    }
+    editDialog.value = true
+}
+
+//save changes
+function save(){
+    const index = rawChecksData.value.findIndex(check => check.id === formModel.value.id)
+    rawChecksData.value[index] = formModel.value
+    editDialog.value = false;
 }
 
 //getting the data from the "backend"

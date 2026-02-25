@@ -1,38 +1,29 @@
-# Mini-modulos-Auditorias
+# Mini Modulo de Auditorias
+Este proyecto consiste en una prueba técnica para InnAudit enfocada principalmente al desarrollo web.
 
-This template should help get you started developing with Vue 3 in Vite.
+Para la elaboración de este proyecto, se ha usado Vue JS en la versión 3, así como Vuetify 3, siendo estas las últimas versiones de ambos. Asimismo, el código ha sido escrito usando JavaScript. 
 
-## Recommended IDE Setup
+Se ha decidido usar estas herramientas, ya que son familiares, ya que he trabajado previamente con ellas.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Así, decir también que, para la elaboración de este proyecto, se ha utilizado IA generativa para la elaboración del dataset, así como para debuggear. También se ha usado la documentación oficial de Vuetify 3 (https://vuetifyjs.com/en/getting-started/installation/#installation) y foros y tutoriales online.
 
-## Recommended Browser Setup
+## Requisitos
+Para poder correr el proyecto, es necesario tener disponibles todas las dependencias. Además, para la creación del backend, se ha empleado la librería de json-server a modo de base de datos
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Cómo correr el proyecto
+El proyecto se ha estado corriendo en local tomando como ruta principal la carpeta donde se encuentra el proyecto (Mini-modulos-Auditoria)
+Teniendo esto en cuenta, para ejecutar el backend, es necesario escribir en la terminal donde se ejecute el proyecto (en mi caso, en la terminal de Virtual Studio Code) el comando:
+json-server .\src\data\DB.json --port 3000
+En otra terminal distinta, para activar el frontend como tal, hay que usar el comando: npm run dev 
 
-## Customize configuration
+## Cosas que no han podido completarse y mejoras
+Dada la poca experiencia de su creadora en el desarrollo web, han habido diferentes dificultades y muchas cosas se han quedado sin poder realizarse.
+- Las tablas de las auditorías y los detalles de esta no responden correctamente al cambio de resolución. Concretamente, la tabla de los detalles de auditoría no ocupa todo el espacio que podría ocupar en resoluciones altas
+- Es posible que la búsqueda de los filtros de las auditorías no funcionen correctamente y solo filtren si los términos son exactamente iguales
+-Tampoco se ha podido hacer que la API falle 
+-El botón de refrescar no funciona correctamente si la base de datos no está activa
+- La adición de una nueva auditoría no funciona correctamente. Si es una nueva auditoría completamente, se añade una id extra además de la id de la auditoría. Si es una auditoría existente, en lugar de actualizar la lista anterior, se vuelve a añadir una nueva entrada en el DB.json repitiendo la id de la auditoría en cuestión y vuelve a mostrar todos los checks anteriores
+-No ha sido posible actualizar el progreso de la auditoría
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+En caso de tener más tiempo, se intentaría arreglar todos los problemas mencionados, además de poder aplicarle un estilo general a la página web, para que sea más atractiva visualmente.
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
